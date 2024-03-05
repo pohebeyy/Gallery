@@ -1,0 +1,67 @@
+<!-- res/layout/activity_main.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView для отображения цитаты -->
+
+
+
+    <TextView
+        android:id="@+id/quoteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="50dp"
+        android:text="Цитата дня"
+        android:textSize="18sp" />
+
+
+    <!-- Кнопка для просмотра изображений -->
+    <Button
+        android:id="@+id/imagesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Изображения"
+        android:layout_below="@id/quoteTextView"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:onClick="showImages" />
+
+    <!-- Кнопка для просмотра видео -->
+    <Button
+        android:id="@+id/videosButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Видео"
+        android:layout_below="@id/imagesButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="showVideos" />
+
+    <!-- Кнопка для просмотра 3D-объектов -->
+    <Button
+        android:id="@+id/objects3DButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3D-объекты"
+        android:layout_below="@id/videosButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="show3DObjects" />
+
+    <!-- Кнопка для настроек -->
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Настройки"
+        android:layout_below="@id/objects3DButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:onClick="openSettings" />
+
+</RelativeLayout>
